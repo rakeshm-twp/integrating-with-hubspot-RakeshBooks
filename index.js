@@ -12,7 +12,7 @@ process.env.PRIVATE_APP_ACCESS;
 
 
 app.get("/", async (req, res) => {
-  const url = "https://api.hubapi.com/crm/v3/objects/games";
+  const url = "https://api.hubapi.com/crm/v3/objects/p_games";
 
   const headers = {
     Authorization: `Bearer ${process.env.PRIVATE_APP_ACCESS}`,
@@ -47,7 +47,7 @@ app.get("/update-cobj", (req, res) => {
 });
 
 app.post("/update-cobj", async (req, res) => {
-  const url = "https://api.hubapi.com/crm/v3/objects/games";
+  const url = "https://api.hubapi.com/crm/v3/objects/p_games";
 
   const headers = {
     Authorization: `Bearer ${process.env.PRIVATE_APP_ACCESS}`,
