@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title= title
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="/css/style.css")
+
+  body
+    .form-container
+      h1 Add New Record
+
+      a.back-link(href="/") ← Return to homepage
+
+      form(method="POST", action="/update-cobj")
+        .form-group
+          label(for="name") Name
+          input(type="text", name="name", required)
+
+        .form-group
+          label(for="publisher") Publisher
+          input(type="text", name="publisher", required)
+
+        .form-group
+          label(for="price") Price
+          input(type="number", name="price", required)
+
+        button(type="submit") Submit
